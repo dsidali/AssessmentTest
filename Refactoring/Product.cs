@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Refactoring
 {
-    internal class Customer
+    internal class Product
     {
-        public bool IsPremium { get; set; }
+        public int Price { get; set; }
+        public void ApplyDiscount(Discount discount) { }
     }
 }

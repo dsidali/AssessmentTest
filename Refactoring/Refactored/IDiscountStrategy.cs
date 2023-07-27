@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Refactoring
+namespace Refactoring.Refactored
 {
-    internal class Customer
+    internal interface IDiscountStrategy
     {
-        public bool IsPremium { get; set; }
+        decimal CalculateStrategy(Product product);
     }
 }
